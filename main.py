@@ -5,6 +5,8 @@ trivia_file = open('Apprentice_TandemFor400_Data.json',)
 
 data = json.load(trivia_file)
 
+trivia_file.close()
+
 questions = []
 score = 0
 
@@ -22,11 +24,11 @@ for i in data[:10]:
 
 def prompt_for_answer():
     global score
-    user_answer = int(input("Please select an answer... "))
+    user_answer = input("Please select an answer... ")
     print("")
 
-    if user_answer in answer_key_list:
-        if answers_dict[user_answer] == question['correct']:
+    try:
+        if answers_dict[int(user_answer)] == question['correct']:
             print("Correct!")
             score += 1
             
@@ -36,7 +38,7 @@ def prompt_for_answer():
         print(f"Your score is now {score}/10")
         print("")
 
-    else:
+    except:
         print("Oops, not a valid answer! Try again ")
         prompt_for_answer()
 
@@ -59,6 +61,6 @@ for question in questions:
     print("")
     prompt_for_answer()
 
-trivia_file.close()
+
 
 print(f"Your final score is {score}/10! ")
