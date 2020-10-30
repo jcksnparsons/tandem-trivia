@@ -17,4 +17,4 @@ This application was built exclusively using Python 3.8.1. My goal with this pro
 
 ## Credits
 
-* [Jack Parsons] (https://linkedin.com/in/jackson-parsons): Sole contributor
+* [Jack Parsons](https://linkedin.com/in/jackson-parsons): Sole contributor
