@@ -6,7 +6,7 @@ A command line application built with Python as a coding challenge for Tandem.
 
 1. Make sure you have [Python] (https://www.python.org/downloads/) installed.
 2. Once you have Python installed, clone down this repo using your terminal and navigate to the directory.
-3. Run this command and enjoy!:
+3. Run this command and enjoy:
 ```
 python main.py
 ```
